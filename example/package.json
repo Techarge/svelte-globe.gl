@@ -1,0 +1,29 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "validate": "svelte-check"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "*",
+    "@rollup/plugin-node-resolve": "*",
+    "@rollup/plugin-typescript": "*",
+    "@tsconfig/svelte": "*",
+    "rollup": "*",
+    "rollup-plugin-livereload": "*",
+    "rollup-plugin-svelte": "*",
+    "rollup-plugin-terser": "*",
+    "svelte": "*",
+    "svelte-check": "*",
+    "svelte-preprocess": "*",
+    "svelte-globe-gl": "file:../.",
+    "tslib": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "sirv-cli": "*"
+  }
+}

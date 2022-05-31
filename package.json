@@ -1,0 +1,58 @@
+{
+  "name": "svelte-globe.gl",
+  "svelte": "dist/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.umd.js",
+  "types": "dist/ts/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "validate": "svelte-check",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "*",
+    "@tsconfig/svelte": "*",
+    "fs-extra": "*",
+    "glob": "*",
+    "rollup": "*",
+    "rollup-plugin-execute": "*",
+    "rollup-plugin-filesize": "*",
+    "rollup-plugin-svelte": "*",
+    "rollup-plugin-terser": "*",
+    "svelte": "*",
+    "svelte-check": "*",
+    "svelte-preprocess": "*",
+    "tslib": "*",
+    "typescript": "*"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "dependencies": {
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "globe.gl": "^2.26.2"
+  },
+  "description": "Svelte component for Globe Data Visualization using ThreeJS/WebGL",
+  "version": "1.0.0",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techarge/svelte-globe.gl.git"
+  },
+  "author": "Ling Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Techarge/svelte-globe.gl/issues"
+  },
+  "homepage": "https://github.com/Techarge/svelte-globe.gl#readme"
+}
