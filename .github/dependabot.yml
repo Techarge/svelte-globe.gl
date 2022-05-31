@@ -11,6 +11,14 @@ updates:
     # to match the new version.
     versioning-strategy: "increase"
 
+  - package-ecosystem: "npm"
+      directory: "/example/"
+      schedule:
+        interval: "daily"
+      # Always increase the version requirement
+      # to match the new version.
+      versioning-strategy: "increase"
+
   # Update GitHub actions in workflows
   - package-ecosystem: "github-actions"
     directory: "/"
